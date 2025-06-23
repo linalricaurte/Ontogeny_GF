@@ -19,7 +19,7 @@ Accompanying Paper and Data
 * Paper Title: "Gradual ontogenetic shifts in the mobility and space use of long-lived migratory flamingos"
 * Paper identifier: doi: https://doi.org/10.1101/2025.06.16.659883
 * Dataset Title: Data for the article "Gradual ontogenetic shifts in the mobility and space use of long-lived migratory flamingos"
-* Persistent Identifier: https://doi.org/10.5061/dryad.1rn8pk0zp
+* Persistent Identifier: 
 * Dataset Contributors:
 * Creators: Wouter M.G. Vansteelant, Arnaud Antoine, Olivier Duriez, Frédéric Jiguet, Sergio Nissardi, Davide Scridel, Lorenzo Serra, Stéphan Tillo, Arnaud Béchet, Jocelyn Champagnon
 * Date of Issue: 2025-05-15
