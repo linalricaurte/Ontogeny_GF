@@ -1,1 +1,22 @@
+# Make a list of all necessary packages
+packages <- c("base","piecewiseSEM","lme4","tidyverse","lubridate","tidyr","pbkrtest",
+              "nortest","boot","MuMIn","vegan","dplyr","car","lattice","ggplot2","maptools",
+              "circular","merTools", "lmtest", "nlme","lmerTest","ggpubr","emmeans","magrittr","nlme","multcompView", 
+              "agricolae","AER","sandwich","scales","rlang","pbkrtest","plyr","moments", "egg","devtools",
+              "ggpubr","viridis","broom","raster","corrplot","broom","mgcViz","glmmTMB", "ggpubr","plotly",
+              "Hmisc","corrplot","stats", "lattice","ggplot2","RNCEP","gamm4","sjPlot","nlme","Matrix","correlation",
+              "jtools", "r2glmm","fossil","sf","move","suntools","tidyterra","maptiles","rnaturalearth", "atm","paletteer",
+              "grid","jpeg","lme4","performance","ggeffects","multcomp","gridExtra", "DHARMa" )
 
+
+# update.packages(checkBuilt=TRUE, ask=FALSE)
+# Create a custom function to automatically install and/or read all necessary packages
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+# Apply the ipak function to load all necessary packages
+ipak(packages)
