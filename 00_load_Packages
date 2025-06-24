@@ -1,0 +1,23 @@
+# Make a list of all necessary packages for this script
+packages <- c("base","piecewiseSEM","lme4","tidyverse","lubridate","tidyr","pbkrtest",
+              "nortest","boot","MuMIn","vegan","dplyr","car","lattice","ggplot2","maptools",
+              "circular","merTools", "lmtest", "nlme","lmerTest","ggpubr","emmeans","magrittr","nlme","multcompView", "agricolae","AER","sandwich","scales","rlang","pbkrtest","plyr","moments", "egg","devtools","ggpubr","viridis","broom","raster","corrplot","broom","mgcViz","glmmTMB", "ggpubr", "tidyverse",
+  "Hmisc","corrplot","stats", "lattice","ggplot2","RNCEP","gamm4","sjPlot","nlme","Matrix","correlation","jtools", "r2glmm",
+"lubridate","tidyverse","fossil","ggplot2","sf","move","suntools","tidyterra","maptiles","rnaturalearth")
+# # Make a list of all necessary packages for this script
+# packages <- c("base","piecewiseSEM","lme4","tidyverse","lubridate","tidyr","pbkrtest",
+#               "nortest","boot","MuMIn","vegan","dplyr","car","lattice","ggplot2","maptools",
+#               "sp","circular","merTools", "lmtest", "nlme","lmerTest","ggpubr","emmeans","magrittr","nlme","multcompView", "agricolae","AER","sandwich","scales","pbkrtest","plyr","moments", "egg","devtools","ggpubr","viridis","broom","raster","corrplot","broom","mgcViz","glmmTMB", "ggpubr", "tidyverse",
+#               "Hmisc","corrplot","stats", "lattice","ggplot2","RNCEP","gamm4","sjPlot","nlme","Matrix","correlation","jtools", "r2glmm")
+
+# update.packages(checkBuilt=TRUE, ask=FALSE)
+# custom function to automatically install and/or read all necessary packages
+ipak <- function(pkg){
+  new.pkg <- pkg[!(pkg %in% installed.packages()[, "Package"])]
+  if (length(new.pkg)) 
+    install.packages(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+}
+
+# Apply the ipak function to load all necessary packages
+ipak(packages)
