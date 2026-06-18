@@ -16,9 +16,9 @@ Provenance for this README
 Accompanying Paper and Data
 ---------------------------
 
-* Paper Title: "Gradual ontogenetic shifts in the mobility and space use of long-lived migratory flamingos"
+* Paper Title: "From erratic to sedentary lifestyle: seasonal development of fidelity and traditional site use in long-lived flamingos"
 * Paper identifier: doi: https://doi.org/10.1101/2025.06.16.659883
-* Dataset Title: Data for the article "Gradual ontogenetic shifts in the mobility and space use of long-lived migratory flamingos"
+* Dataset Title: Data for the article "From erratic to sedentary lifestyle: seasonal development of fidelity and traditional site use in long-lived flamingos"
 * Persistent Identifier: 
 * Dataset Contributors:
 * Creators: Wouter M.G. Vansteelant, Arnaud Antoine, Olivier Duriez, Frédéric Jiguet, Sergio Nissardi, Davide Scridel, Lorenzo Serra, Stéphan Tillo, Arnaud Béchet, Jocelyn Champagnon
@@ -43,7 +43,7 @@ Code in this GitHub repository includes all steps to further process open access
 Setup
 -----
  * store all codes in a dedicated working directory
- * store tracking and metadata made available through Dryad in a subfolder 'Data' of your working directory 
+ * store tracking and metadata made available through Zenodo (https://zenodo.org/records/17832426) of your working directory 
  * open R Studio and create R project in the same working directory
  * run scripts one by one in the following order:
 
@@ -63,7 +63,7 @@ Setup
 Pre-processed tracking data and metadata on Dryad
 ==================================================
 
-Details for: GF-fULL_resampled_v20250212.csv
+Details for: GF_resampled1h_fv_v20251021.csv
 ---------------------------------------
 * Description: a comma-delimited file containing the tracking data of 83 greater flamingos (Phoenicopterus roseus) tagged as fledglings in Southern France and Italy, resampled to an hourly resolution. 
 
