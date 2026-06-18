@@ -186,7 +186,6 @@ latlimits <- c(min(data$LAT)-0.5,max(data$LAT)+0.5)
 
 #grouping variable
 
-
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
 ###################################################
